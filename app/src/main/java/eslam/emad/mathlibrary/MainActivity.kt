@@ -1,4 +1,4 @@
-package eslam.emad.mathlibrary
+ package eslam.emad.mathlibrary
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,8 +7,9 @@ import eslam.emad.library.MathOperations.divide
 import eslam.emad.library.MathOperations.minus
 import eslam.emad.library.MathOperations.multiply
 import eslam.emad.library.MathOperations.plus
+import eslam.emad.library.MathOperations.square
 
-class MainActivity : AppCompatActivity() {
+ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -20,7 +21,8 @@ class MainActivity : AppCompatActivity() {
         val minus = minus(firstNum, secondNum)
         val multiply = multiply(firstNum, secondNum)
         val divide = divide(firstNum, secondNum)
+        val square = square(10)
 
-        textView.text = "$plus \n $minus \n $multiply \n $divide"
+        textView.text = "$plus \n $minus \n $multiply \n $divide \n $square"
     }
 }

@@ -17,4 +17,8 @@ object MathOperations {
     fun divide(firstNumber: Int, secondNumber: Int): Int {
         return firstNumber / secondNumber
     }
+
+    fun square(number: Int): Int {
+        return number * number
+    }
 }
